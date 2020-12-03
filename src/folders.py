@@ -4,9 +4,8 @@ Created on Mar 21 2020
 @author: klaus
 '''
 import os.path as path
-
+import numpy as np
 TOP_DIR_NAME = "src"
-
 def get_src_dir():
     """ Goes up from the current file directory until 'src' is found """
     i = 0

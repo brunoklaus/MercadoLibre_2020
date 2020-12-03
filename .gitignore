@@ -7,8 +7,19 @@
 .project
 .pydevproject
 .settings/
-/results
-/data
+
+
+##
+## Selectively add stuff from data folder
+##
+/data/*
+/data_backup
+
+!data/model/
+!data/domain_pred*
+!data/RNN_*
+!data/lgb.pkl
+
 
 dst-env/
 .cache/v/cache/lastfailed
