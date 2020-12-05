@@ -7,7 +7,7 @@ Required packages can be found in requirements.txt
 
 <b>"ratio files"</b>: These correspond to feature extraction. They are mostly ratios answering the question:<br><br>
 <i>If a domain_id/item_id/category_id is made was viewed in the history object, then how likely is it that it is
-the  domain_id/item_id/category_id  of the actual bought item???? <i/><br>
+the  domain_id/item_id/category_id  of the actual bought item???? </i><br>
   We also use a FastText model to extract features corresponding to the likelihood
 of the item id belonging to the spanish/portuguese/english language, though it proved to be insignificant w.r.t. NDCG. To do this, we download a pre-trained fasttext model.
 
