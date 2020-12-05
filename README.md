@@ -1,5 +1,5 @@
 # MercadoLibre_2020
-Repo for my work on MeLi Data Challenge 2020 
+Repo for my work on MeLi Data Challenge 2020 (4th place on public LB)
 
 Required packages can be found in requirements.txt
 
