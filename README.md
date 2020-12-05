@@ -21,7 +21,7 @@ package to extract a 512-dimensional embedding of the first two words.
 <b>"Light Gradient Boosting (lgb.pkl)"</b>: Similar to the RNN, we train a LGBRanker to rank items. There is a special function that gathers the necessary input matrix with relevant features.
 
 <b>"Neural_Domain_Identifier"</b>: A neural net that uses features from observed domains in the history object to predict the domain of the purchased object. Domains may repeat
-several times with different items, so we extract max,min,mean,std. We also use the output of another model, which predicts normalized domain probabilities given a title string,
+several times with different items, so we extract max,min,mean,std. We also use the output of another trained model (see **domain_string_identifier.py**), which predicts normalized domain probabilities given a title string,
 as extra features.
 
 Our final model is hierarchical.
