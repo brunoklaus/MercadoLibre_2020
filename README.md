@@ -1,11 +1,7 @@
 # MercadoLibre_2020
 Repo for my work on MercadoLibre Data Challenge 2020 
 
-Requires:
-SentenceTransformer package <br>
-Tensorflow 2.0<br>
-fasttext<br>
-numpy,scipy,pandas<br>
+Required packages can be found in requirements.txt
 
 Main file to run is read_input.py. It should check for the presence of a few files:
 
