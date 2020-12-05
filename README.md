@@ -29,7 +29,7 @@ Our final model is hierarchical.
 First, we rank the items. There are several rankings: recency,frequency,LGB model predictions, so on...
 
 The LightGradientBoosting model (lgb.pkl) was trained to rank items. The RNN model also achieves the same thing.
-We use hard-coded coefficients that performed well in the validation set. We also use "Neural_Domain_Identifier" to filter items whose domain receives a low score
+We use a linear combination of rankings with hard-coded coefficients that performed well in the validation set. We also use "Neural_Domain_Identifier" to filter items whose domain receives a low score
 (WARNING: it's better to use the saved model weights or the predictions already saved as csv. If you retrain, the optimal cutoff might have to be chosen again w.r.t. validation.
 
 Finally, we use a directed graph to recommend items that we previously bought when viewing the same items as this purchase's. If that fails, we firstly rank by domain,
